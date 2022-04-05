@@ -1,5 +1,15 @@
 version: "3.8"
 services:
+  bmi-calculator:
+    build:
+      context: .
+    depends_on:
+      - mongodb
+    environment:
+      MONGO_URL: mongodb://mongodb:27017
+      SQLITE_DATABASE: ":memory:"
+    ports:
+      - 3000:3000
   mongodb:
     image: mongo:5.0.6-focal
     ports:

@@ -6,14 +6,14 @@
     "node": "^16.14.2",
     "npm": "^8.5.0"
   },
-  "main": "src/Main.ts",
+  "main": "src/Web/Main.ts",
   "bin": {
     "bmi": "dist/CLI/Main.js"
   },
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
-    "start": "npm run build && node --require dotenv/config dist/Main.js",
-    "start:dev": "ts-node-dev --require dotenv/config src/Main.ts",
+    "start": "npm run build && node --require dotenv/config dist/Web/Main.js",
+    "start:dev": "ts-node-dev --require dotenv/config src/Web/Main.ts",
     "test": "jest",
     "prepare": "[ ${CI} ] || husky install"
   },
@@ -25,6 +25,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "better-sqlite3": "^7.5.0",
+    "express": "^4.17.3",
+    "fastify": "^3.28.0",
     "mongodb": "^4.5.0",
     "require-env": "^0.2.1"
   },
