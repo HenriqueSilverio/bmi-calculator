@@ -24,6 +24,8 @@
   "author": "Henrique Silvério",
   "license": "GPL-3.0",
   "dependencies": {
+    "better-sqlite3": "^7.5.0",
+    "mongodb": "^4.5.0",
     "require-env": "^0.2.1"
   },
   "devDependencies": {
