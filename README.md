@@ -2,22 +2,28 @@
 
 Simple app that checks your Body Mass Index (BMI).
 
-## Docker
+## Implementation steps
 
-### Build
+**0. Domain Model**
 
-```bash
-docker build -t bmi-calculator .
-```
+- [`feature/0-domain-model`](https://github.com/HenriqueSilverio/bmi-calculator/tree/feature/0-domain-model)
 
-### Run
+**1. Application Layer**
 
-```bash
-docker run --rm -it --name bmi-calculator bmi-calculator
-```
+- [`feature/1-application-layer`](https://github.com/HenriqueSilverio/bmi-calculator/tree/feature/1-application-layer)
 
-### Access
+**2. Database Layer**
 
-```bash
-docker exec -it bmi-calculator /bin/sh
-```
+- [`feature/2-database-impl`](https://github.com/HenriqueSilverio/bmi-calculator/tree/feature/2-database-impl)
+
+**3. Presentation Layer**
+
+- [`feature/3-presentation-impl`](https://github.com/HenriqueSilverio/bmi-calculator/tree/feature/3-presentation-impl)
+
+**4. Infra Web**
+
+- [`feature/4-infra-web`](https://github.com/HenriqueSilverio/bmi-calculator/tree/feature/4-infra-web)
+
+**5. Infra CLI**
+
+- [`feature/5-infra-cli`](https://github.com/HenriqueSilverio/bmi-calculator/tree/feature/5-infra-cli)
